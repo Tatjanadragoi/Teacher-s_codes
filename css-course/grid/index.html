@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid lightcoral;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) 400px;
+            grid-template-rows: repeat(3, minmax(100px, 200px));
+            grid-auto-flow: row;
+        }
+
+        .item {
+            background-color: seagreen;
+            color: #fff;
+            border: 1px solid blue;
+        }
+
+        .item > img {
+            width: auto;
+            max-height: 100%;
+            max-width: 300px;
+        }
+
+        .item4 {
+            text-align: center;
+            grid-column-start: 2;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">item1 Lorem dolor sit amet.  </div>
+        <div class="item item2">item2</div>
+        <div class="item">item3 Lorem ipsum dolor sit amet.</div>
+        <div class="item item4">
+            <img src="https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761.jpg"/>
+        </div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+    </div>
+
+</body>
+</html>
