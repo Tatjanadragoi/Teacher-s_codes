@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.social-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 28px;
+}
+
+.social-links {
+    gap: 60px;
+    display: flex;
+    list-style-type: none;
+    color: #4FBFA5;
+    font-size: 24px;
+}
