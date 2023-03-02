@@ -1,5 +1,11 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .content {
@@ -16,7 +22,84 @@
 .social-links {
     gap: 60px;
     display: flex;
-    list-style-type: none;
     color: #4FBFA5;
     font-size: 24px;
+    align-items: center;
+}
+
+.main-header {
+    background-color: #4FBFA5;
+}
+
+.main-menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 23px 0;
+    color: #fff;
+}
+
+.main-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.main-menu > li {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.main-menu > li:hover {
+    text-decoration: underline;
+}
+
+.call-btn {
+    font-size: 18px;
+    padding: 10px 50px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.call-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 55px 0;
+}
+
+.header-text {
+    color:#fff;
+    max-width: 416px;
+}
+
+.header-text > h2 {
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+
+.header-text > p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 40px;
+}
+
+.header-text > button {
+    padding: 15px 25px;
+    background-color: #00868A;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
 }
