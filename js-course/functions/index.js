@@ -233,19 +233,185 @@
 // TODO
 // function bar () {
 //     let a = 2;
-//     for (;;) {
-//         let a = 2;
+
+//     for (let i = 0; i < 5; i++) {
+//         let a = 3;
+
 //         function foo () {
-//             console.log();
+//             console.log(a);
 //         }
+
+//         foo();
 //     }
 // }
 
 
-// function aaaaa () {
-//     console.log('aaaaaaa');
+// bar();
+
+// var a = 2;
+// let b = 3;
+
+// let a = 3;
+
+// if (true) {
+//     let a = 2;
 // }
 
 
-// window.aaaaa();
+// console.log(a); 
+
+
+// let sum = 0;
+// let i = 0;
+// for (; i < 10; i++) {
+//     sum += i;
+// }
+
+// console.log(sum / i);
+
+// let foo = 0;
+
+// if (true) {
+//     foo = function () {
+//         console.log('WORKING');
+//     }
+// }
+
+// foo();
+
+
+// arrow functions
+
+// function sum (a,b) {
+//     return a + b;
+// }
+
+// const sum = (a, b) => a + b;
+// const squareIt = a => a * a; // единственный вариант без круглых скобок
+// const zeroArgs = () => {};
+// const destructArg = ({age}) => age * 2;
+
+// function squareItAgain (a) {
+//     return a * a;
+// }
+
+// console.log( sum(2,6) );
+
+// const foo = (...args) => {
+//     console.log(args);
+// };
+
+// foo(2,3,4,5);
+
+// const getAverageFromArgs = (...args) => {
+//     let sum = 0;
+
+//     for (let i = 0; i < args.length; i++) {
+//         sum += i;
+//     }
+
+//     return sum/args.length;
+// };
+
+
+// callback 
+
+// function passCorrectMessageENG () {
+//     console.log('PASSWORD IS CORRECT!');
+// }
+
+// function passIncorrectMessageENG () {
+//     console.log('PASS IS INCORRECT');
+// }
+
+// function passCorrectMessageDE () {
+//     console.log('richtig');
+// }
+
+// function passIncorrectMessageDE () {
+//     console.log('nicht');
+// }
+
+
+// function checkPassword (callback1, callback2) {
+//     const userPass = prompt('enter pass');
+//     const correctPass = 'admin';
+
+//     if (userPass === correctPass) {
+//         if (typeof callback1 === 'function') {
+//             callback1();
+//         }               
+//     } else {
+//         callback2();
+//     }
+// }
+
+// const a = 2;
+// const b = false;
+// const c = 'asd';
+// const d = [];
+// const e = {};
+// const f = function () {};
+// const g = () => {};
+
+
+
+// checkPassword.age = 23;
+// checkPassword.userName = 'John';
+
+// console.log( checkPassword.age )
+
+// function sum (a,b) {
+//     return a + b;
+// }
+
+// sum(false, undefined);
+
+// checkPassword(2, 'hello');
+// checkPassword(passCorrectMessageENG, passIncorrectMessageENG);
+// checkPassword(passCorrectMessageDE, passIncorrectMessageDE);
+
+// passCorrectMessageDE();
+
+// boxing unboxing
+// console.log( 'hello world!'.length );
+// console.log( {} + '' )
+// console.log( checkPassword.toString() );
+
+
+// first class objects
+
+
+// const foo = (cb1, cb2) => cb1(cb2(10));
+
+// console.log(foo(
+//     a => a + a,
+//     a => a - 5
+// ));
+
+// const arr = [
+//     a => a - 2,
+//     a => a + 3,
+//     a => a * 2,
+//     function (a,b,...args) {
+//         // for (;;) {
+//         //     asdasdasd
+//         // }
+
+//         // if () {}
+//     }
+// ];
+
+// console.log( arr[3](5) );
+
+// const foo = function () {};
+// foo.age = 2;
+
+// console.dir(foo.length);
+
+// for ( let key in foo ) {
+//     console.log(key);
+// }
+
+
 
