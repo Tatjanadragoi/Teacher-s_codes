@@ -1,5 +1,7 @@
 import React from 'react';
 import { Counter } from '../counter';
+import {RegisterForm} from '../register-form';
+
 
 
 export const App = () => {
@@ -9,10 +11,14 @@ export const App = () => {
         {title: 'Meters', amount: 1000}
     ];
 
+
     return (
-        <div>
-           {clickers.map((props) => <Counter {...props} />)}
-        </div>
-    );
+        <RegisterForm/>
+    )
+    // return (
+    //     <div>
+    //        {clickers.map((props) => <Counter {...props} />)}
+    //     </div>
+    // ); 
 };
 

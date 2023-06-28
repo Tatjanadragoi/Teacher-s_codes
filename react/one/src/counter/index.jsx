@@ -2,7 +2,7 @@ import React from "react";
 import {useCounter} from '../hooks/use-counter';
 
 
-export const Counter = ({ amount, title }) => {
+export const Counter = ({title, amount}) => {
    const {addCounter: addAge, subCounter: subAge, counter: age} = useCounter(amount);
 
     return (
@@ -13,5 +13,4 @@ export const Counter = ({ amount, title }) => {
             <button onClick={subAge}>-</button>
         </div>
     );
-
 };
