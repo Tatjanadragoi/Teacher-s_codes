@@ -3,14 +3,14 @@ import {useCounter} from '../hooks/use-counter';
 
 
 export const Counter = ({title, amount}) => {
-   const {addCounter: addAge, subCounter: subAge, counter: age} = useCounter(amount);
+   const {addCounter, subCounter, counter} = useCounter(amount);
 
     return (
         <div>
             <h2>{ title } Clicker</h2>
-            <div>{ age }</div>
-            <button onClick={addAge}>+</button>
-            <button onClick={subAge}>-</button>
+            <div>{ counter }</div>
+            <button onClick={addCounter}>+</button>
+            <button onClick={subCounter}>-</button>
         </div>
     );
 };
