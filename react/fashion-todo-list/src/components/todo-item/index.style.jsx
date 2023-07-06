@@ -9,9 +9,11 @@ export const Wrapper = styled.div`
         grid-template-rows: 1fr 30px;
         color: #fff;
         font-size: 14px;
+        row-gap: 10px;
         line-height: 22px;
         padding: 15px;
         border-radius: 10px;
+        justify-content: center;
         width: 200px;
     }
 
