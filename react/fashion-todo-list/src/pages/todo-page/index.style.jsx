@@ -11,6 +11,7 @@ export const RightSide = styled.div`
     & {
         ${basicSideCss}
         background-color: aqua;
+        padding-top: 100px;
     }
 `;
 

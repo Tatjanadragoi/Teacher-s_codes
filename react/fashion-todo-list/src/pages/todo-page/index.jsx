@@ -3,6 +3,7 @@ import { RightSide, LeftSide, Wrapper } from './index.style';
 import { MainMenu } from "../../components/main-menu";
 import { Button } from "../../components/button";
 import { Input } from "../../components/input";
+import { TodoItem } from "../../components/todo-item";
 
 
 export const TodoPage = () => {
@@ -16,7 +17,10 @@ export const TodoPage = () => {
                     Add todo
                 </Button>
             </LeftSide>
-            <RightSide/>
+            <RightSide>
+                <TodoItem/>
+            
+            </RightSide>
         </Wrapper>
     );
 };
