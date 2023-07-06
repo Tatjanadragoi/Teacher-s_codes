@@ -1,25 +1,29 @@
 import styled, {css} from 'styled-components';
 
 
+
+
 const basicSideCss = css`
-        padding-top: 50px;
         height: 100%;
 `;
 
 export const RightSide = styled.div`
-
     & {
         ${basicSideCss}
         background-color: aqua;
     }
-
 `;
 
 
 export const LeftSide = styled.div`
     & {
         ${basicSideCss}
-        background-color: burlywood;
+        background-color: #2d2d2d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
     }
 `;
 
